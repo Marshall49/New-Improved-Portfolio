@@ -13,45 +13,42 @@ html {
 
 body {
   width: 100%;
-  /* background: #0E0E0E; */
 }
 
 .wrapper {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+}
+
+.video-container{
+  position: relative;
+}
+
+video {
+  height: auto;
+  vertical-align: middle;
+  width: 100%;
+}
+
+h2 {
+  color: white;
+  font-family: 'Nobile', sans-serif;
+  font-size: 9vw;
+  text-align: center;
 }
 
 .section {
   width: 90%;
   margin: 0 auto;
-  background: #0E0E0E;
-}
-
-/* .section-2 {
-  width: 90%;
-  margin: 0 auto;
-  background: black;
-}
-
-.section-3 {
-  width: 90%;
-  margin: 0 auto;
-  background: purple;
-} */
-
-.navbar::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 h1 {
-  color: #fff;
+  color: #000;
   font-size: 48px;
 }
 
 p {
-  color: #fff;
+  color: #000;
   font-size: 16px;
   font-weight: 300;
 }
@@ -60,52 +57,60 @@ p {
 
 
 nav {
+  background: rgba(0,0,0,0);
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
   height: 70px;
   line-height: 70px;
 }
 
 nav a img {
-  vertical-align: middle;
-  width: 30px;
-  height: 30px;
-}
-
-nav ul {
-  color: #fff;
+  width: 60px;
+  height: 60px;
 }
 
 nav ul:nth-child(2) {
   float: right;
 }
 
-/* header */
-
-
-header {
-  margin: 100px 0 200px 120px;
+nav ul {
+  color: #fff;
+  list-style-type: none;
+  padding-right: 25px;
 }
 
-header p {
-  width: 60%;
-  margin-top: 10px;
+nav ul li {
+  display: inline;
+  margin: 10px;
 }
+
+nav ul a {
+  text-decoration: none;
+  color: white;
+}
+
 
 /* projects */
 
-
-.projects {
-  text-align: center;
+.projects, .tech-stack {
   width: 100%;
 }
 
 .projects img {
   margin: 1%;
-  width: 45%;
+  width: 25%;
+}
+
+/* tech-stack */
+
+.tech-stack img {
+  margin: 1%;
+  width: 25%;
 }
 
 /* About-Me-Header */
 
-.about-me-header {
+.about-me-header, .tech-stack, .projects {
   margin: 130px 0 80px 40px;
 }
 
@@ -122,25 +127,18 @@ footer p {
 /* Responsiveness */
 
 @media only screen and (max-width: 991px) {
-  header {
-    text-align: left;
-    margin: 100px 0 100px 30px;
-  }
-  header h1 {
-    font-size: 36px;
-  }
-  header p {
-    font-size: 12px;
-    width: 90%;
+
+  .projects, .tech-stack, .about-me-header {
+    text-align: center;
   }
   .projects img {
     margin: 2%;
-    width: 90%;
+    width: 60%;
   }
-  .about-me-header {
+  .about-me-header, .projects, .tech-stack {
     margin: 130px 0 40px 12px;
   }
-  .about-me-header  h1 {
+  .about-me-header, .projects, .tech-stack,  h1 {
     font-size: 36px;
   }
   .about-me-header  p {
