@@ -128,15 +128,13 @@ footer p {
 
 @media only screen and (max-width: 991px) {
 
-  .projects, .tech-stack, .about-me-header {
-    text-align: center;
-  }
   .projects img {
     margin: 2%;
     width: 60%;
   }
   .about-me-header, .projects, .tech-stack {
     margin: 130px 0 40px 12px;
+    text-align: center;
   }
   .about-me-header, .projects, .tech-stack,  h1 {
     font-size: 36px;
